@@ -5,10 +5,11 @@
     "disable_guests": true,
     "disable_login_language_selector": false,
     "disable_3pid_login": false,
-    "brand": "Riot",
+    "brand": "Spring",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
-    "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
+    "integrations_jitsi_widget_url": "https://scalar.vector.im/api/widgets/jitsi.html",
+    "bug_report_endpoint_url": "https://github.com/turboss/riot-web/issues",
     "features": {
         "feature_groups": "labs",
         "feature_pinning": "labs"
@@ -20,13 +21,6 @@
         "servers": [
             "springrts.com"
         ]
-    },
-    "welcomeUserId": "@riot-bot:matrix.org",
-    "piwik": {
-        "url": "https://piwik.riot.im/",
-        "whitelistedHSUrls": ["https://matrix.org"],
-        "whitelistedISUrls": ["https://vector.im", "https://matrix.org"],
-        "siteId": 1
     },
     "phasedRollOut": {
         "feature_lazyloading": {
