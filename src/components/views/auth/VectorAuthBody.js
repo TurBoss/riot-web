@@ -23,16 +23,12 @@ import { _t } from 'matrix-react-sdk/lib/languageHandler';
 module.exports = React.createClass({
     displayName: 'SpringAuthFooter',
     statics: {
-        replaces: 'AuthFooter',
+        replaces: 'AuthBody',
     },
 
     render: function() {
-        return (
-            <div className="mx_AuthFooter">
-                <a href="https://springrts.com" target="_blank" rel="noopener">Home</a>
-                <a href="https://springrts.com/wiki" target="_blank" rel="noopener">wiki</a>
-                <a href="https://github.com/turboss/riot-web" target="_blank" rel="noopener">github</a>
-            </div>
-        );
+        return <div className="mx_AuthBody">
+            { this.props.children }
+        </div>;
     },
 });
